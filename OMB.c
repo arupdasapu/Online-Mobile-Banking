@@ -1033,7 +1033,7 @@ int main()
         } else {
             system("COLOR 47");
             printf("Pin confirmation failed\n");
-            return;
+            return 1;
         }
     }
     if(file == NULL){
@@ -1045,7 +1045,7 @@ int main()
     fscanf(secret, "%d", &saved_pin);
     fclose(file);
     fclose(secret);
-    char input[50], input2[]="1";
+    char input[50], input2[]="*1023#";
     printf("Please Enter *1023#:\n");
     scanf("%s", &input);
     input3 = (strcmp(input2, input));

@@ -1040,16 +1040,5 @@ int main()
         FILE *file = fopen("balance.txt", "w");
         fprintf(file, "%lf", 0.00);
         fclose(file);
-    }
-    fscanf(file, "%lf", &balance);
-    fscanf(secret, "%d", &saved_pin);
-    fclose(file);
-    fclose(secret);
-    char input[50], input2[]="*1023#";
-    printf("Please Enter *1023#:\n");
-    scanf("%s", &input);
-    input3 = (strcmp(input2, input));
-    system("cls");
-    menu(input3, balance, saved_pin);
-    getch();
-}
+   
+
